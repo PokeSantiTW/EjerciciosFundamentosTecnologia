@@ -1,0 +1,20 @@
+#div1 {
+    font-family: times, serif;
+    font-size: 14pt;
+    font-style: italic;
+    color: rgb(255, 128, 0);
+}
+
+#div2 {
+    font-family: times, serif;
+    font-size: 18pt;
+    font-style: italic;
+    color: rgb(255, 0, 0);
+}
+
+#div3 {
+    font-family: courier;
+    font-size: 24pt;
+    font-style: italic;
+    color: rgb(0, 128, 255);
+}
