@@ -45,8 +45,8 @@ document.addEventListener('keydown', function(e) {
     square2.style.height = y + 'px';
     square2.style.width = y + 'px';
 
-    parrafo1.textContent = `Tamaño: ${x}`;
-    parrafo2.textContent = `Tamaño: ${y}`;
+    parrafo1.innerHTML = `Tamaño: ${x}`;
+    parrafo2.innerHTML = `Tamaño: ${y}`;
 });
 
 function keyEvent(e) {
@@ -77,7 +77,7 @@ function keyEvent(e) {
       break;
     }
 
-    parrafo3.textContent = `
+    parrafo3.innerHTML = `
     MouseDown: ${mouseDown} |
     MouseUp: ${mouseUp} |
     MouseOver: ${mouseOver} |

@@ -10,5 +10,5 @@ document.addEventListener('keydown', function(e) {
         character = e.key
         word.push(character);
     }
-    output.textContent = word.join('');
+    output.innerHTML = word.join('');
 });

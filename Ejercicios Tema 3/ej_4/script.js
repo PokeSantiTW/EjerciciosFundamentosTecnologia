@@ -1,7 +1,7 @@
 const output = document.getElementById('parrafo');
 
 document.addEventListener('keyup', function(e) {
-    output.textContent = `
+    output.innerHTML = `
     Key: ${e.key} | 
     Keycode: ${e.code} | 
     ASCII: ${e.key.charCodeAt(0)} |

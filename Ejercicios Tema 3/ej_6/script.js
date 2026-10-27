@@ -25,5 +25,5 @@ document.addEventListener('keydown', function(e) {
         y = 0;
     }
 
-    output.textContent = `X: ${x} | Y: ${y}`;
+    output.innerHTML = `X: ${x} | Y: ${y}`;
 });

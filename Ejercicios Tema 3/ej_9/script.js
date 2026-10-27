@@ -40,23 +40,23 @@ function formatText(counts) {
 
 function windowE(e) {
   updateCounts(e.type, windowCounters);
-  parrafo3.textContent = formatText(windowCounters);
+  parrafo3.innerHTML = formatText(windowCounters);
 }
 
 function square1E(e) {
   updateCounts(e.type, square1Counters);
-  parrafo1.textContent = formatText(square1Counters);
+  parrafo1.innerHTML = formatText(square1Counters);
 }
 
 function square2E(e) {
   updateCounts(e.type, square2Counters);
-  parrafo2.textContent = formatText(square2Counters);
+  parrafo2.innerHTML = formatText(square2Counters);
 }
 
 function updateCounts(type, countsObj) {
   switch (type) {
     case 'mousedown': countsObj.mouseDown++; break;
-    case 'mouseup': countsObj.mouseUp++; break; // Corregido a mouseUp (U mayúscula)
+    case 'mouseup': countsObj.mouseUp++; break;
     case 'mouseover': countsObj.mouseOver++; break;
     case 'mouseout': countsObj.mouseOut++; break;
     case 'mousemove': countsObj.mouseMove++; break;
@@ -80,8 +80,8 @@ document.addEventListener('keydown', function (e) {
     x += 1;
   }
 
-  x < 0 ? x = 0 : x;
-  y < 0 ? y = 0 : y;
+  x = x < 0 ? 0 : x;
+  y = y < 0 ? 0 : y;
 
   square1.style.height = x + 'px';
   square1.style.width = x + 'px';

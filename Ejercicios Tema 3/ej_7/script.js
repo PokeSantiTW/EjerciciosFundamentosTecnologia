@@ -30,8 +30,8 @@ document.addEventListener('keydown', function(e) {
     square2.style.height = y + 'px';
     square2.style.width = y + 'px';
 
-    parrafo1.textContent = `Tamaño: ${x}`;
-    parrafo2.textContent = `Tamaño: ${y}`;
+    parrafo1.innerHTML = `Tamaño: ${x}`;
+    parrafo2.innerHTML = `Tamaño: ${y}`;
 
-    parrafo3.textContent = `Cuadrado Izquierdo: ${x} | Cuadrado Derecho: ${y}`;
+    parrafo3.innerHTML = `Cuadrado Izquierdo: ${x} | Cuadrado Derecho: ${y}`;
 });
