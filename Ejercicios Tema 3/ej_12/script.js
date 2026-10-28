@@ -41,12 +41,12 @@ function eventHandler(e) {
   parrafoInterno.innerHTML = formatText(cuadro.counters);
 
   // Cambiar colores
-  if (e.type == 'mouseover') {
-    cuadro.style = "background-color: red;"
-  } else if (e.type == 'mouseout') {
-    cuadro.style = "background-color: lightgray;"
-  } else if (e.type == 'click') {
-    cuadro.style = "background-color: green;"
+  if (e.type == "mouseover") {
+    cuadro.style.backgroundColor = "red";
+  } else if (e.type == "mouseout") {
+    cuadro.style.backgroundColor = "lightgray";
+  } else if (e.type == "click") {
+    cuadro.style.backgroundColor = "green";
   }
 }
 
